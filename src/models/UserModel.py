@@ -15,7 +15,7 @@ class UserModel(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   name = db.Column(db.String(128), nullable=False)
   email = db.Column(db.String(128), unique=True, nullable=False)
-  password = db.Column(db.String(128), nullable=True)
+  password = db.Column(db.String(128), nullable=False)
   created_at = db.Column(db.DateTime)
   modified_at = db.Column(db.DateTime)
   blogposts = db.relationship('BlogpostModel', backref='users', lazy=True)

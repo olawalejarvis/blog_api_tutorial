@@ -10,5 +10,7 @@
     - pipenv install
   script:
     - pytest
+  after_success:
+    - coverage report -m
   addons:
     - postgresql: "9.3"

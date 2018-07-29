@@ -1,3 +1,4 @@
 .vscode
 .coverage
 .pytest_cache
+.coveralls.yml

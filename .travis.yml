@@ -11,6 +11,6 @@
   script:
     - pytest
   after_success:
-    - coverage report -m
+    - coverage run -m unittest
   addons:
     - postgresql: "9.3"

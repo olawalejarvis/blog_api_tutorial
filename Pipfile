@@ -12,6 +12,8 @@ flask-script = "*"
 marshmallow = "*"
 flask-bcrypt = "*"
 pyjwt = "*"
+pytest = "*"
+coverage = "*"
 
 [dev-packages]
 

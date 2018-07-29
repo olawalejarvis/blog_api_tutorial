@@ -9,8 +9,8 @@
     - pip install pipenv
     - pipenv install
   script:
-    - pytest
+    - pytest --cov=src src/tests/
   after_success:
-    - coverage run -m unittest
+    - coveralls
   addons:
     - postgresql: "9.3"

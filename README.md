@@ -1,4 +1,5 @@
 # Blog API
+[![Build Status](https://travis-ci.org/olawalejarvis/blog_api_tutorial.svg?branch=part3)](https://travis-ci.org/olawalejarvis/blog_api_tutorial)
 
 ## Installation
   - Install [Python](https://www.python.org/downloads/), [Pipenv](https://docs.pipenv.org/) and [Postgres](https://www.postgresql.org/) on your machine

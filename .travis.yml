@@ -9,7 +9,7 @@
     - pip install pipenv
     - pipenv install
   script:
-    - pytest --cov=src src/tests/
+    - pytest --cov=src --cov-config .coveragerc
   after_success:
     - coveralls
   addons:

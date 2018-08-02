@@ -1,0 +1,16 @@
+  language: python
+  python:
+    - "3.6"
+  services:
+    - postgresql
+  before_script:
+    - psql -c 'create database blog_test_db;' -U postgres
+  install:
+    - pip install pipenv
+    - pipenv install
+  script:
+    - pytest --cov=src --cov-config .coveragerc
+  after_success:
+    - coveralls
+  addons:
+    - postgresql: "9.3"
